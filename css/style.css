@@ -1,0 +1,123 @@
+.container {
+  font-family: "Roboto", sans-serif;
+}
+.landing-page-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+/* top nav */
+.nav-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.top-nav {
+  width: 55;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  width: 50px;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: block;
+}
+.logo-name {
+  line-height: 1;
+}
+.logo-name p {
+  font-family: "Antonio", sans-serif;
+  font-size: 27px;
+}
+.logo-name-1 {
+  color: #e0e0e0;
+  letter-spacing: 2px;
+}
+.logo-name-2 {
+  color: #b2ceff;
+  letter-spacing: 2.7px;
+}
+
+.nav-link {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: white;
+}
+.nav-link a {
+  font-style: italic;
+  font-weight: 500;
+  margin-left: 50px;
+  color: white;
+}
+
+/* landing page */
+.landing-page-wrapper .landing-page-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.8;
+}
+
+/* history page */
+.history-page-wrapper {
+  position: relative;
+}
+.history-page-wrapper .history-page-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.history-content-wrapper {
+  font-family: "Antonio", sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.history-header-wrapper {
+  width: auto;
+  display: flex;
+}
+.history-header-number {
+  font-size: 170px;
+  letter-spacing: -5px;
+  line-height: 1.1;
+  color: #558096;
+}
+.history-header-vertical {
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+.history-header-text {
+  color: #0d4a68;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.history-header-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 1px;
+  background-color: #558096;
+}
+.history-content {
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  width: 70%;
+  padding-left: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
