@@ -7,26 +7,28 @@
 <link rel="stylesheet" href="css/ress.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title></title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="top">
         <div class="landing-page-wrapper">
             <img class="landing-page-img" src="landing-page.jpg">
             <div class="nav-wrapper">
                 <div class="top-nav">
-                    <div class="nav-logo">
-                        <img src="mountain-logo.png">
-                        <div class="logo-name">
-                            <p class="logo-name-1">LOSANGELES</p>
-                            <p class="logo-name-2">MOUNTAINS</p>
+                    <a href="#">
+                            <div class="nav-logo">
+                            <img src="mountain-logo.png">
+                            <div class="logo-name">
+                                <p class="logo-name-1">LOSANGELES</p>
+                                <p class="logo-name-2">MOUNTAINS</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="nav-link">
-                        <a href="#">01. HISTORY</a>
-                        <a href="#">02. TEAM</a>
+                        <a href="#history" class="nav-history">01. HISTORY</a>
+                        <a class="nav-team">02. TEAM</a>
                     </div>
                 </div>
             </div>
@@ -82,10 +84,31 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="team-header-tabs">
-
+                <div class="team-header-tabs-wrapper">
+                    <div class="team-header-tabs">
+                        <a>MOUNTAIN 1</a>
+                        <a>MOUNTAIN 2</a>
+                    </div>
+                </div>
+                <div>
+                    
                 </div>
             </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer">
+                <div class="nav-logo">
+                    <img src="mountain-logo.png">
+                    <div class="logo-name">
+                        <p class="logo-name-1">LOSANGELES</p>
+                        <p class="logo-name-2">MOUNTAINS</p>
+                    </div>
+                </div>
+                <div class="footer-rights">
+                    <p>COPYRIGHT 2021. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+            <div class="footer-overlay"></div>
         </div>
     </div>
 <script src="js/index.js"></script>
