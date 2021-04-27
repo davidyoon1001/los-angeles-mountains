@@ -13,6 +13,9 @@ img {
 a {
   text-decoration: none;
 }
+.header-font {
+  font-family: "Antonio", sans-serif;
+}
 /* top nav ***********************************************/
 /* top nav ***********************************************/
 /* top nav ***********************************************/
@@ -105,7 +108,6 @@ a {
   margin-right: auto;
 }
 .header-wrapper {
-  font-family: "Antonio", sans-serif;
   width: auto;
   display: flex;
 }
@@ -240,6 +242,22 @@ a {
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-color: #1e6078;
+}
+.team-schedule-wrapper {
+  position: absolute;
+  top: 140%;
+  left: 21%;
+  padding: 15px 40px 20px 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.team-schedule h1 {
+  color: #1e6078;
+  margin-bottom: 15px;
+}
+.schedule-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.5;
 }
 
 /* footer ***********************************************/

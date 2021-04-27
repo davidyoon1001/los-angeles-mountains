@@ -9,7 +9,8 @@ $(document).ready(function(){
             scrollTop:$('.team-page-wrapper').offset().top -80
         },300);
     });
-    if('html, body'.offset().top > 80){
+    if($('#id').offset().top > 80){
         alert('shit');
     }
+    
 });
