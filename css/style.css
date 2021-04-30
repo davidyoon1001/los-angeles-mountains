@@ -24,16 +24,29 @@ a {
   position: fixed;
   top: 0;
   z-index: 10;
+  transition: 0.3s;
+}
+.top-nav .logo-name {
+  display: none;
+}
+.nav-scroll {
+  background-color: white;
+}
+.nav-scroll .logo-name {
+  display: block;
+}
+.nav-scroll .nav-link a {
+  color: #1e6078;
 }
 .top-nav {
-  width: 55;
+  white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
   width: 55%;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 70px;
 }
 .nav-logo {
   display: flex;
@@ -55,16 +68,13 @@ a {
   font-size: 20px;
 }
 .logo-name-1 {
-  color: #e0e0e0;
+  color: #444444;
   letter-spacing: 2px;
   line-height: 17px;
 }
 .logo-name-2 {
-  color: #b2ceff;
+  color: #1e6078;
   letter-spacing: 2.6px;
-}
-.nav-link {
-  text-decoration-color: white;
 }
 .nav-link a {
   cursor: pointer;
@@ -112,14 +122,14 @@ a {
   display: flex;
 }
 .header-number {
-  font-size: 170px;
+  font-size: 130px;
   line-height: 1.1;
   color: rgba(85, 129, 150, 0.8);
 }
 .header-vertical {
   margin-left: 5px;
   margin-top: auto;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .header-text {
   color: #0d4a68;
@@ -169,6 +179,7 @@ a {
   width: 100%;
 }
 .carousel-dot-wrapper {
+  cursor: default;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -180,7 +191,7 @@ a {
   display: inline-block;
   border-radius: 50%;
   background-color: #3b7489;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .carousel-dot:nth-child(1) {
   background-color: white;
@@ -192,8 +203,6 @@ a {
   width: 100%;
   height: auto;
   position: relative;
-}
-.team-page-wrapper img {
 }
 .team-header-wrapper {
   top: 0;
@@ -245,8 +254,8 @@ a {
 }
 .team-schedule-wrapper {
   position: absolute;
-  top: 140%;
-  left: 21%;
+  top: 40%;
+  left: 22%;
   padding: 15px 40px 20px 40px;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -297,4 +306,14 @@ a {
   top: 0;
   height: 100%;
   background-color: rgba(30, 96, 120, 0.5);
+}
+
+/* width 500 *****************************************************/
+/* width 500 *****************************************************/
+/* width 500 *****************************************************/
+@media screen and (max-width: 500px) {
+  .top-nav {
+    width: 100%;
+    padding: 10px;
+  }
 }
