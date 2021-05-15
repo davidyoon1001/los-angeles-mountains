@@ -224,7 +224,7 @@ a {
   transition: 0.3s;
   cursor: pointer !important;
 }
-.active,
+.dot-active,
 .carousel-dot:hover {
   background-color: white;
 }
@@ -276,10 +276,12 @@ a {
   font-size: 1.2rem;
   font-weight: 800;
   color: #9bb9c6;
+  transition: 0.3s;
 }
-.team-header-tabs a:hover {
+.team-header-tabs a:hover,
+.tabs-active {
   background-color: #9bb9c6;
-  color: #1e6078;
+  color: #1e6078 !important;
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-color: #1e6078;
@@ -296,12 +298,27 @@ a {
   color: #1e6078;
   margin-bottom: 15px;
 }
-.schedule-content-grid {
+.schedule-content1,
+.schedule-content2 {
+  display: none;
+}
+.content-active {
+  display: block;
+}
+.team-schedule .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 130px 130px;
   line-height: 1.5;
 }
 
+.content-active .grid a {
+  color: #1e6078;
+  text-decoration-color: #1e6078;
+}
+.content-active .grid a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
 /* footer ***********************************************/
 /* footer ***********************************************/
 /* footer ***********************************************/

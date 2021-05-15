@@ -1,29 +1,31 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var carouselIndex = 1;
+showCarousel(carouselIndex);
 
-function currentSlide(n){
-    showSlides(slideIndex = n);
+function currentCarousel(n){
+    showCarousel(carouselIndex = n);
 }
 
-function showSlides(n){
+function showCarousel(n){
     var i;
-    var slides = document.getElementsByClassName('mySlides');
+    var carousels = document.getElementsByClassName('myCarousels');
     var dots = document.getElementsByClassName('carousel-dot');
-    if (n > slides.length){
-        slideIndex = 1
+    if (n > carousels.length){
+        carouselIndex = 1
     }
     if (n < 1) {
-        slideIndex = slide.length
+        carouselIndex = carousels.length
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    for (i = 0; i < carousels.length; i++) {
+        carousels[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" dot-active", "");
     }
-    slides[slideIndex-1].style.display = "flex";
-    dots[slideIndex-1].className += " active";
+    carousels[carouselIndex-1].style.display = "flex";
+    dots[carouselIndex-1].className += " dot-active";
 }
+
+
 $(document).ready(function(){  
 
     $('.nav-history').click(function(){
@@ -49,5 +51,28 @@ $(document).ready(function(){
             $('.nav-wrapper').removeClass("nav-scroll");
         }
     });
+    $('.tab1').click(function(){
+        if($(this).hasClass('tabs-active')){
+            
+        }else{
+            $('.tab2').removeClass('tabs-active');
+            $(this).addClass('tabs-active');
+            $('.schedule-content2').removeClass('content-active');
+            $('.schedule-content1').addClass('content-active');
+
+        }
+    });
+    $('.tab2').click(function(){
+        if($(this).hasClass('tabs-active')){
+            
+        }else{
+            $('.tab1').removeClass('tabs-active');
+            $(this).addClass('tabs-active');
+            $('.schedule-content1').removeClass('content-active');
+            $('.schedule-content2').addClass('content-active');
+
+        }
+    });
+
     
 });

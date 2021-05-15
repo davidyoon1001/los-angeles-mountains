@@ -50,7 +50,7 @@
             </div>
             <div class="carousel-wrapper">
                 <div class="carousel">
-                    <div class="mySlides fade">
+                    <div class="myCarousels fade">
                         <div class="carousel-content">
                             <img src="carousel-1.jpg">
                         </div>
@@ -64,7 +64,7 @@
                             <img src="carousel-4.jpg">
                         </div>
                     </div>
-                    <div class="mySlides fade">
+                    <div class="myCarousels fade">
                         <div class="carousel-content">
                             <img src="carousel-5.jpg">
                         </div>
@@ -78,7 +78,7 @@
                             <img src="carousel-8.jpg">
                         </div>
                     </div>
-                    <div class="mySlides fade">
+                    <div class="myCarousels fade">
                         <div class="carousel-content">
                             <img src="carousel-9.jpg">
                         </div>
@@ -94,9 +94,9 @@
                     </div>
                 </div>
                 <div class="carousel-dot-wrapper">
-                    <span class="carousel-dot" onclick="currentSlide(1)"></span>
-                    <span class="carousel-dot" onclick="currentSlide(2)"></span>
-                    <span class="carousel-dot" onclick="currentSlide(3)"></span>
+                    <span class="carousel-dot" onclick="currentCarousel(1)"></span>
+                    <span class="carousel-dot" onclick="currentCarousel(2)"></span>
+                    <span class="carousel-dot" onclick="currentCarousel(3)"></span>
                 </div>
             </div>
         </div>
@@ -117,30 +117,54 @@
                 </div>
                 <div class="team-header-tabs-wrapper">
                     <div class="team-header-tabs">
-                        <a>MOUNTAIN 1</a>
-                        <a>MOUNTAIN 2</a>
+                        <a class="tab1 tabs-active">MOUNTAIN 1</a>
+                        <a class="tab2">MOUNTAIN 2</a>
                     </div>
                 </div>
             </div>
             <div class="team-schedule-wrapper">
                 <div class="team-schedule">
                     <h1 class="header-font">SCHEDULE</h1>
-                    <div class="schedule-content-grid">
-                        <div>
-                            <p>25 Nov 2021</p>
-                            <p>28 Nov 2021</p>
-                            <br>
-                            <p>18 Dec 2021</p>
-                            <br>
-                            <p>7 Jan 2022</p>
+                    <div class="schedule-content1 content-active">
+                        <div class="grid">
+                            <div>
+                                <p><a href="#">25 Nov 2021</a></p>
+                                <p><a href="#">28 Nov 2021</a></p>
+                                <br>
+                                <p><a href="#">18 Dec 2021</a></p>
+                                <br>
+                                <p><a href="#">7 Jan 2022</a></p>
+                            </div>
+                            <div>
+                                <p>vestibulum viverra</p>
+                                <p>vestibulum viverra</p>
+                                <br>
+                                <p>vestibulum viverra</p>
+                                <br>
+                                <p>vestibulum viverra</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>vestibulum viverra</p>
-                            <p>vestibulum viverra</p>
-                            <br>
-                            <p>vestibulum viverra</p>
-                            <br>
-                            <p>vestibulum viverra</p>
+                    </div>
+                    <div class="schedule-content2">
+                        <div class="grid">
+                            <div>
+                                <p><a href="#">12 Nov 2021</a></p>
+                                <p><a href="#">19 Nov 2021</a></p>
+                                <br>
+                                <p><a href="#">2 Dec 2021</a></p>
+                                <p><a href="#">3 Dec 2021</a></p>
+                                <p><a href="#">9 Dec 2021</a></p>
+                                <p><a href="#">30 Dec 2021</a></p>
+                            </div>
+                            <div>
+                                <p>dolore magna</p>
+                                <p>dolore magna</p>
+                                <br>
+                                <p>dolore magna</p>
+                                <p>dolore magna</p>
+                                <p>dolore magna</p>
+                                <p>dolore magna</p>
+                            </div>
                         </div>
                     </div>
                 </div>
