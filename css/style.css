@@ -357,13 +357,74 @@ a {
   height: 100%;
   background-color: rgba(30, 96, 120, 0.5);
 }
-
-/* width 500 *****************************************************/
-/* width 500 *****************************************************/
-/* width 500 *****************************************************/
-@media screen and (max-width: 500px) {
+.testing::after {
+  content: url("carousel-1.jpg");
+}
+/* width 1050 *****************************************************/
+/* width 1050 *****************************************************/
+/* width 1050 *****************************************************/
+@media screen and (max-width: 1050px) {
+  .top-nav {
+    width: 80%;
+  }
+  .team-header {
+    width: 70%;
+  }
+  .team-header-tabs {
+    width: 70%;
+  }
+  .footer-wrapper .footer {
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* width 600 *****************************************************/
+/* width 600 *****************************************************/
+/* width 600 *****************************************************/
+@media screen and (max-width: 600px) {
   .top-nav {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+  }
+  .nav-link a {
+    margin-left: 25px;
+  }
+  .history-content-wrapper {
+    left: 10%;
+  }
+  .history-content-wrapper .content {
+    width: 90%;
+  }
+  .team-header {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+  }
+  .team-header-tabs {
+    width: 80%;
+  }
+  .team-schedule-wrapper {
+    top: 45%;
+    left: 18%;
+    padding: 15px 20px 20px 20px;
+  }
+  .footer-wrapper .footer {
+    width: 100%;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+}
+/* width 450 *****************************************************/
+/* width 450 *****************************************************/
+/* width 450 *****************************************************/
+@media screen and (max-width: 450px) {
+  .team-schedule-wrapper {
+    top: 60%;
+    left: 15%;
+    padding: 15px 20px 20px 20px;
+  }
+  .footer-wrapper .footer {
+    width: 100%;
+    grid-gap: 10px;
   }
 }

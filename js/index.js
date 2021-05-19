@@ -39,8 +39,20 @@ $(document).ready(function(){
         },300);
     });
     $(window).resize(function(){
-        if($(this).width() <= 500){
-            alert('shit');
+        if($(this).width() > 1050){
+            $('.landing-page-img').attr('src', 'landing-page.jpg');
+            $('.history-page-img').attr('src', 'history-page.jpg');
+            $('.team-page-img').attr('src', 'team-page.jpg');
+        }
+        if($(this).width() <= 1050){
+            $('.landing-page-img').attr('src', 'landing-page-pad.jpg');
+            $('.history-page-img').attr('src', 'history-page-pad.jpg');
+            $('.team-page-img').attr('src', 'team-page-pad.jpg');
+        }
+        if($(this).width() <= 700){
+            $('.landing-page-img').attr('src', 'landing-page-phone.jpg');
+            $('.history-page-img').attr('src', 'history-page-phone.jpg');
+            $('.team-page-img').attr('src', 'team-page-phone.jpg');
         }
     });
     $(window).scroll(function(){
