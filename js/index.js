@@ -1,9 +1,28 @@
-var carouselIndex = 1;
+if($(window).width() > 700){
+    var carouselIndex = 1;
+}
+if($(window).width() <= 700){
+    var carouselIndex = 4;
+}
+if($(window).width() <= 500){
+    var carouselIndex = 8;
+}
+$(window).resize(function(){
+    if($(this).width() > 1050){
+        var carouselIndex = 1;
+    }
+    if($(this).width() <= 700){
+        var carouselIndex = 4;
+    }
+    if($(this).width() <= 700){
+        var carouselIndex = 8;
+    }
+});
 showCarousel(carouselIndex);
 
 function currentCarousel(n){
     showCarousel(carouselIndex = n);
-}
+};
 
 function showCarousel(n){
     var i;
@@ -23,8 +42,23 @@ function showCarousel(n){
     }
     carousels[carouselIndex-1].style.display = "flex";
     dots[carouselIndex-1].className += " dot-active";
-}
+};
 
+if($(window).width() > 1050){
+    $('.landing-page-img').attr('src', 'landing-page.jpg');
+    $('.history-page-img').attr('src', 'history-page.jpg');
+    $('.team-page-img').attr('src', 'team-page.jpg');
+}
+if($(window).width() <= 1050){
+    $('.landing-page-img').attr('src', 'landing-page-pad.jpg');
+    $('.history-page-img').attr('src', 'history-page-pad.jpg');
+    $('.team-page-img').attr('src', 'team-page-pad.jpg');
+}
+if($(window).width() <= 700){
+    $('.landing-page-img').attr('src', 'landing-page-phone.jpg');
+    $('.history-page-img').attr('src', 'history-page-phone.jpg');
+    $('.team-page-img').attr('src', 'team-page-phone.jpg');
+};
 
 $(document).ready(function(){  
 
@@ -38,6 +72,7 @@ $(document).ready(function(){
             scrollTop:$('.team-page-wrapper').offset().top -69
         },300);
     });
+    
     $(window).resize(function(){
         if($(this).width() > 1050){
             $('.landing-page-img').attr('src', 'landing-page.jpg');
@@ -85,6 +120,4 @@ $(document).ready(function(){
 
         }
     });
-
-    
 });

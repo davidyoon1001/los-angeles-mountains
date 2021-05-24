@@ -193,6 +193,20 @@ a {
   display: flex;
   grid-template-columns: repeat(4, minmax(min-content, 210px));
 }
+.carousel-pad {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(3, minmax(min-content, 210px));
+  display: flex;
+}
+.carousel-dot-wrapper-pad {
+  cursor: default;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: none;
+}
 .carousel .mySlides {
   grid-gap: 10px;
 }
@@ -200,6 +214,7 @@ a {
   display: none;
 }
 .carousel-content {
+  margin: 0px 5px;
   width: 100%;
   height: auto;
 }
@@ -292,7 +307,7 @@ a {
   left: 22%;
   padding: 15px 40px 20px 40px;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .team-schedule h1 {
   color: #1e6078;
@@ -373,10 +388,56 @@ a {
   .team-header-tabs {
     width: 70%;
   }
+  .team-schedule-wrapper {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
   .footer-wrapper .footer {
     width: 80%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+/* width 800 *****************************************************/
+/* width 800 *****************************************************/
+/* width 800 *****************************************************/
+@media screen and (max-width: 800px) {
+  .carousel {
+    width: 80%;
+  }
+  .team-header {
+    width: 80%;
+  }
+  .team-header-tabs {
+    width: 80%;
+  }
+  .footer-wrapper .footer {
+    width: 80%;
+  }
+}
+/* width 700 *****************************************************/
+/* width 700 *****************************************************/
+/* width 700 *****************************************************/
+@media screen and (max-width: 700px) {
+  .carousel {
+    display: none;
+  }
+  .carousel-dot-wrapper {
+    display: none;
+  }
+  .team-header {
+    width: 80%;
+  }
+  .team-header-tabs {
+    width: 80%;
+  }
+  .footer-wrapper .footer {
+    width: 80%;
+  }
+  .carousel-pad {
+    display: flex;
+  }
+  .carousel-dot-wrapper-pad {
+    display: block;
   }
 }
 /* width 600 *****************************************************/
@@ -397,11 +458,10 @@ a {
     width: 90%;
   }
   .team-header {
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
+    width: 90%;
   }
   .team-header-tabs {
-    width: 80%;
+    width: 90%;
   }
   .team-schedule-wrapper {
     top: 45%;
@@ -410,8 +470,6 @@ a {
   }
   .footer-wrapper .footer {
     width: 100%;
-    /* padding-left: 20px;
-    padding-right: 20px; */
   }
 }
 /* width 450 *****************************************************/
