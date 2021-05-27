@@ -1,5 +1,5 @@
 # Los Angeles Mountains
-[Live Demo](https://davidyoon1001.github.io/skateboard/)
+[Live Demo](https://davidyoon1001.github.io/los-angeles-mountains/)
 ---
 #### Features
 * Top fixed navigation bar / transition background color by vertical measure
