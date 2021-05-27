@@ -375,6 +375,22 @@ a {
 .testing::after {
   content: url("carousel-1.jpg");
 }
+.footer-notes {
+  margin: auto;
+  padding: 10px;
+}
+.footer-notes p {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.footer-notes a {
+  margin-left: 5px;
+  white-space: nowrap;
+}
+.footer-notes img {
+  width: 25px;
+}
 /* width 1050 *****************************************************/
 /* width 1050 *****************************************************/
 /* width 1050 *****************************************************/
