@@ -6,7 +6,7 @@
 * Nav buttons navigate to according sections.
 * Responsive image background
 * Responsive image carousel
-* Tabs displaying different content
+* Tabs displaying different contents
 
 ---
 
